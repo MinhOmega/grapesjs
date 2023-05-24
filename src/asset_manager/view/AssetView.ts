@@ -44,6 +44,9 @@ export default class AssetView<TModel extends Asset = Asset> extends View<TModel
   }
 
   template(view: AssetView, asset: Asset) {
+  console.log("🚀 ~ file: AssetView.ts:47 ~ AssetView<TModel ~ template ~ asset:", asset);
+    console.log("🚀 ~ file: AssetView.ts:47 ~ AssetView<TModel ~ template ~ view:", view);
+    console.log("🚀 ~ file: AssetView.ts:50 ~ AssetView<TModel ~ template ~ this:", this);
     const { pfx } = this;
     return `
       <div class="${pfx}preview-cont">
